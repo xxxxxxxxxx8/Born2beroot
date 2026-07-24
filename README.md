@@ -60,3 +60,19 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ![1*SoVNIKT340ARlLvQ7RuwDA](https://user-images.githubusercontent.com/58959408/174701125-7a285b0d-7036-4bef-926b-271b0032d7ad.png)
 
+4. Click `Create a Virtual Hard Disk Now` and then click `Create` to create the Hard Disk.
+
+![1*PzVboJLyLTs7qJmgbdoBYA](https://user-images.githubusercontent.com/58959408/174701209-a5d10ea3-c634-4d49-b099-01d538fe0517.png)
+
+5. Click `VDI (VirtualBox Disk Image)` and then click `Continue` to select VDI.
+
+![1*6_D9jIyOW0jE3a6vF_UzXg](https://user-images.githubusercontent.com/58959408/174701340-d84f6c80-e09b-43ae-b31a-6dd5d6306f23.png)
+
+6. Click `Dyamically Allocated` and then click `Continue` to only use space on your Hard Disk.
+
+![1*HagpR-UD0HWCb7zRTeSQXQ](https://user-images.githubusercontent.com/58959408/174744677-eac5b679-49f7-4881-a59b-00a420cbe640.png)
+
+7. Set Size as `12.00 GB` and then click `Continue` this should be enough for this project.
+
+![1*rYdYJbPswCVCUa5pwKcRZA](https://user-images.githubusercontent.com/58959408/174745855-73880988-be69-45cc-bb6d-7c6c1a40c1ac.png)
+
