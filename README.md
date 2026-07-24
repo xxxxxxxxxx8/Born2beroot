@@ -46,3 +46,9 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 <img width="1307" alt="Screen Shot 2022-06-24 at 12 27 24 PM" src="https://user-images.githubusercontent.com/58959408/175453219-e30d058a-946c-482b-85de-4feaad7b970d.png">
 
 
+## Part 2 - Installing Your Virtual Machine
+
+1. Click on `New`
+
+![1*tkjZEbnHKqPGN24HQw_kRA](https://user-images.githubusercontent.com/58959408/174700376-2862e8e9-0a7a-4681-af3b-e82dbc7d9aa5.png)
+
