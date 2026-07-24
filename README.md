@@ -25,3 +25,14 @@
 
 5. Find your Debian Download from Part 1 - Downloading Your Virtual Machine and put that download in this sgoinfre folder that you have just created.
 
+### Part 1.2 - Virtual Box
+
+#### Now head over to Virtual Box to continue on.
+<img width="264" alt="Screen Shot 2022-06-24 at 12 18 12 PM" src="https://user-images.githubusercontent.com/58959408/175452234-79c7f008-10b2-4e4b-a602-95886d9e2508.png">
+
+#### Don't have Virtual Box Installed?
+Download it from Managed Software Center on an Apple Computer/Laptop.
+
+<img width="1307" alt="Screen Shot 2022-06-24 at 12 27 24 PM" src="https://user-images.githubusercontent.com/58959408/175453219-e30d058a-946c-482b-85de-4feaad7b970d.png">
+
+
