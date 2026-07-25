@@ -76,3 +76,28 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ![1*rYdYJbPswCVCUa5pwKcRZA](https://user-images.githubusercontent.com/58959408/174745855-73880988-be69-45cc-bb6d-7c6c1a40c1ac.png)
 
+8. Click `Settings` and then click `Storage` to view your Virtual Machine Storage.
+	
+<img width="1309" alt="Screen Shot 2022-06-24 at 12 51 09 PM" src="https://user-images.githubusercontent.com/58959408/175455682-e1b4c977-2f33-41cf-b3cc-3ad78b3254ce.png">
+
+9. Click on `Optical Drive` (Optical Drive - far right blue small box).
+	
+![1*je75kGWjXl0M6PlqEzHgoA](https://user-images.githubusercontent.com/58959408/174701924-0c69938f-10ec-498f-adec-bacf073b4b99.png)
+
+10. Click on `Choose a disk file...` (2nd option in the drop down).
+	
+![1*VDy31g0tePnUOuJ1cZQsxQ](https://user-images.githubusercontent.com/58959408/174702002-9b4fe4d2-3008-4375-9ec1-57f5e1425eb8.png)
+
+11. Then click on the Virtual Machine file (.iso). 
+	
+![1*FOldzHFaQ2JS_phe6z6T4g](https://user-images.githubusercontent.com/58959408/174702161-957eb0b6-2803-407f-b018-c02f7615f027.png)
+
+12. Click on your `Virtual Machine` and then click `'ok` to confirm you Virtual Machine Storage.
+	
+![1*Evj7Z2EOq102A1zUVgUnQg](https://user-images.githubusercontent.com/58959408/174702820-824e0acf-f919-4bfb-a619-eea8068fe309.png)
+
+13. Click `Start` (The Green Arrow ➡️) to start your Virtual Machine.
+	
+![1*Yg53c1-01g4VzTqhcVEEcA](https://user-images.githubusercontent.com/58959408/174702806-1bd8fce3-aac6-44b3-84d9-c76252dfecd8.png)
+
+
