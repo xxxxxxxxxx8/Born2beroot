@@ -125,3 +125,23 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ![1*zKUk6R9tls_jiyY81ue8kA](https://user-images.githubusercontent.com/58959408/174729629-4f111978-4fc1-47ae-891f-aea693929480.png)
 
+## ⚠️ NOTE: Whenever you are told to create a password, use the same password as everything.
+
+5. Create a Host Name as your login, with 42 at the end (eg. prossi42) - write down your Host Name, as you will need this later on.
+	
+![1*r0fzgkzXOjK2DfsBCh7wEQ](https://user-images.githubusercontent.com/58959408/174729750-fbd2d215-b526-42c6-8ff0-b83f886c1f3c.png)
+
+6. Leave this blank, press `enter` on Continue.
+	
+![1*81XjZBZg2bbNXunuxgnFPQ](https://user-images.githubusercontent.com/58959408/174729840-a85c3319-3a70-4922-9335-e4bb6f765ee9.png)
+
+7. Create a Password for the Host Name - write this down as well, as you will need this later on. 
+	
+![1*ft498oj7syh4zVjI48U_tw](https://user-images.githubusercontent.com/58959408/174729894-d0fc794f-add8-49e7-9015-521f9e93958f.png)
+
+8. Create a User Name without 42 at the end (eg. prossi) - write down your Host Name, as you will need this later on. 
+	
+![1*rhJWnMKN0TPBZwqRey9OeQ](https://user-images.githubusercontent.com/58959408/174729939-06933a35-5dd1-4924-848e-78d2023bb66e.png)
+
+9. Create a Password for the User Name (you might as well use the same password as your Host Password) write this down as well, as you will need this later on. 
+
