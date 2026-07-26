@@ -145,3 +145,19 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 9. Create a Password for the User Name (you might as well use the same password as your Host Password) write this down as well, as you will need this later on. 
 
+10. Press `enter` on your `Timezone` (The timezone your currently doing this project in).
+	
+![1*2i7svoURih_UIlRJ87rj5w](https://user-images.githubusercontent.com/58959408/174730349-76a4e74f-822b-4040-8d95-554d44fcb67c.png)
+
+11. Press `enter` on `Guided - use entire disk and set up encrypted LVM` (Second to last option from the list).
+	
+![1*CsSx-ALmn8mMxvWicsNVAQ](https://user-images.githubusercontent.com/58959408/174730389-03e5dcd7-9472-4cab-bf88-fe3cc4dc0f4c.png)
+
+12. Press `enter` on Select Disk to Partition.
+	
+![1*BTLz5sT6noL_SVQ7eq3u-A](https://user-images.githubusercontent.com/58959408/174730452-e267df43-2883-4760-85c4-010970fee329.png)
+
+13. Press `enter` on Select `Separate /home, /var, and /tmp paritions` (Last option from the list).
+	
+![1*r5zFPA7R_9BtIqwyOpCCVw](https://user-images.githubusercontent.com/58959408/174730481-2641b9c0-c50d-4f2b-9e71-3896a0760e10.png)
+
