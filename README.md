@@ -266,3 +266,13 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 7. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
 8. Lastly type `sudo service ssh restart` to restart the SSH Service 
 
+### Part 4.4 - Installing and Configuring UFW (Uncomplicated Firewall)
+
+1. First type `apt-get install ufw` to install UFW
+2. Type `sudo ufw enable` to inable UFW
+3. Type `sudo ufw status numbered` to check the status of UFW
+4. Type `sudo ufw allow ssh` to configure the Rules
+5. Type `sudo ufw allow 4242` to configure the Port Rules
+6. Lastly Type `sudo ufw status numbered` to check the status of UFW 4242 Port
+
+
