@@ -250,3 +250,8 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 6. Type `sudo visudo` to open sudoers file
 7. Lastly find - # User privilege specification, type `your_username  	ALL=(ALL) ALL`
 
+### Part 4.2 - Installing Git and Vim
+
+1. Then type `apt-get install git -y` to install Git
+2. Then type `git --version` to check the Git Version
+
