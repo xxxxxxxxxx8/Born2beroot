@@ -255,3 +255,14 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 1. Then type `apt-get install git -y` to install Git
 2. Then type `git --version` to check the Git Version
 
+### Part 4.3 - Installing and Configuring SSH (Secure Shell Host)
+
+1. Type `sudo apt install openssh-server`
+2. Type `sudo systemctl status ssh` to check SSH Server Status
+3. Type `sudo vim /etc/ssh/sshd_config`
+4. Find this line `#Port22` 
+5. Change the line to `Port 4243` without the # (Hash) in front of it
+6. Save and Exit Vim 
+7. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
+8. Lastly type `sudo service ssh restart` to restart the SSH Service 
+
