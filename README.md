@@ -276,3 +276,20 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 6. Lastly Type `sudo ufw status numbered` to check the status of UFW 4242 Port
 
 
+## Part 5 Connecting to SSH
+
+0. To exit your Virtual Machine and use your mouse, press `command` on your Apple Keyboard and your mouse should appear
+1. Go to your Virtual Box Program
+2. Click on your Virtual Machine and select `Settings`
+3. Click `Network` then `Adapter 1` then `Advanced` and then click on `Port Forwarding`
+![1*rCj_FeuZ5Rm2abz48qhulg](https://user-images.githubusercontent.com/58959408/174720900-39eda7e0-9be8-453c-94f1-4aa1a6b10951.png)
+4. Change the Host Port and Guest Port to `4242`
+![1*61-KSUCFcerO1wPqBcYISg](https://user-images.githubusercontent.com/58959408/174720987-e8de3bf9-2ffa-40ca-9d5c-4d0dea9d0b30.png)
+5. Then head back to your Virtual Machine
+6. Type `sudo systemctl restart ssh` to restart your SSH Server
+7. Type `sudo service sshd status` to check your SSH Status
+8. Open an iTerm and type the following `ssh your_username@127.0.0.1 -p 4242`
+9. In case an error occurs, then type `rm ~/.ssh/known_hosts` in your iTerm and then retype `ssh your_username@127.0.0.1 -p 4242`
+10. Lastly type `exit` to quit your SSH iTerm Connection 
+
+
