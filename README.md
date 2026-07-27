@@ -227,3 +227,14 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 30. Before we move onto starting your Virtual Machine, make sure you have your Host, Username and Password/s saved or written down somewhere. 
 
+## Part 3.1 - Starting Your Virtual Machine
+
+1. Press enter on `Debian GNU/Linux` 
+
+2. Enter your encryption password you had created before
+
+3. Login in as the your_username you had created before
+
+4. Type `lsblk` in your Virtual Machine to see the partition
+
+
