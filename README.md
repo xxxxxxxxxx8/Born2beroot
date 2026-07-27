@@ -238,3 +238,15 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 4. Type `lsblk` in your Virtual Machine to see the partition
 
 
+## Part 4 - Configurating Your Virtual Machine
+
+### Part 4.1 - Installing Sudo
+
+1. First type `su -` to login in as the root user.
+2. Then type `apt-get update -y` 
+3. Then type `apt-get upgrade -y` 
+4. Then type `apt-get install sudo`
+5. Then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
+6. Type `sudo visudo` to open sudoers file
+7. Lastly find - # User privilege specification, type `your_username  	ALL=(ALL) ALL`
+
