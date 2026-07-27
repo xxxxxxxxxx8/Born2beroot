@@ -161,3 +161,19 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 	
 ![1*r5zFPA7R_9BtIqwyOpCCVw](https://user-images.githubusercontent.com/58959408/174730481-2641b9c0-c50d-4f2b-9e71-3896a0760e10.png)
 
+14. Select `Yes` and press `Enter` to write the changes to disks and configure LVM.
+	
+![1*NHdo3JbApICz0Co2epPLFA](https://user-images.githubusercontent.com/58959408/174730521-780f5eb2-4955-48df-8c59-af9914674ee7.png)
+
+15. Press `Enter` to `cancel` Erasing data as you won't need this for your Virtual Machine.
+	
+![1*KHmnCUJUWhf1minIdHNS4g](https://user-images.githubusercontent.com/58959408/174730626-c132041c-3070-405f-a8d8-60d620a1d770.png)
+
+16. Create a Encryption passphrase - write this down as well, as you will need this later on.
+	
+![1*B0QL-gX7rZW5-RJyTD1uWw](https://user-images.githubusercontent.com/58959408/174730733-f306e051-4b0e-40de-93ab-56f2cdce45d5.png)
+
+17. Retype the Encryption passphrase you just created.
+	
+![1*xE1owXa0ttpvcioaEwnutA](https://user-images.githubusercontent.com/58959408/174730804-796f6db1-8b59-4f8e-900c-1416f957db30.png)
+
