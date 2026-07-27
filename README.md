@@ -177,3 +177,15 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 	
 ![1*xE1owXa0ttpvcioaEwnutA](https://user-images.githubusercontent.com/58959408/174730804-796f6db1-8b59-4f8e-900c-1416f957db30.png)
 
+18. Type in `max`and press enter on `Continue` to assign the amount of volume group to use for guided partitioning.
+	
+![1*SUFMu-qy3rBwIe9B0Bq3kg](https://user-images.githubusercontent.com/58959408/174730857-2de10217-3d42-41ca-8f43-fc91fddb64c6.png)
+
+19. Press enter on `Finish partitioning and write changes to disk`. 
+
+<img width="806" alt="Screen_Shot_2022-09-05_at_5 33 43_PM" src="https://user-images.githubusercontent.com/58959408/188408125-7c93acc1-b37f-4b9f-8189-b3cc4a83da8c.png">
+
+20. Press enter on `Yes` for Partition Disks.
+	
+![1*yfXpHyGD37OGAOX7qs1Avw](https://user-images.githubusercontent.com/58959408/174730895-f70df93e-eb7e-493c-9374-edf58a47408c.png)
+
