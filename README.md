@@ -313,3 +313,9 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 8. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
 9. Lastly type `sudo reboot` to reboot the change affects
 
+### Part 6.2 - Creating a Group
+
+1. First type `sudo groupadd user42` to create a group
+2. Then type `sudo groupadd evaluating` to create an evaluating group
+3. Lastly type `getent group` to check if the group has been created
+
