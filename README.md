@@ -330,3 +330,11 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 5. Type `groups` to see which groups the user account belongs to
 6. Lastly type `chage -l your_new_username` to check if the password rules are working in users
 
+### Part 6.4 - Creating sudo.log
+
+1. First type `cd ~/../`
+4. Then type `cd var/log`
+5. Then type `mkdir sudo` (if it already exists, then continue to the next step).
+6. Then type `cd sudo && touch sudo.log`
+7. Then type `cd ~/../`
+
