@@ -319,3 +319,14 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 2. Then type `sudo groupadd evaluating` to create an evaluating group
 3. Lastly type `getent group` to check if the group has been created
 
+### Part 6.3 - Creating a User and Assigning Them Into The Group
+
+1. First type `cut -d: -f1 /etc/passwd` to check all local users
+2. Type `sudo adduser new_username` to create a username - write down your new_username, as you will need this later on. 
+- 2.1 Type `sudo usermod -aG user42 your_username`
+- 2.2 Type `sudo usermod -aG evaluating your_new_username`
+3. Type `getent group user42` to check if the user is the group
+4. Type `getent group evaluating` to check the group
+5. Type `groups` to see which groups the user account belongs to
+6. Lastly type `chage -l your_new_username` to check if the password rules are working in users
+
