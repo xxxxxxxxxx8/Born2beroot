@@ -396,3 +396,9 @@ wall "	#Architecture: $arc
 	#Network: IP $ip ($mac)
 	#Sudo: $cmds cmd"
 ```
+2. Then open up a iTerm2 seperate from your Virtual Machine and type in iTerm `ssh your_host_name42@127.0.0.1 -p 4242` and then type your password, when it asks for it. 
+3. Then type `cd /usr/local/bin`.
+4. Then type `nano monitoring.sh` and paste the text above into the vim monitoring.sh you just created, by doing `command` + `v` on your Apple keyboard.
+5. Save and Exit your `monitoring.sh`
+- 5.1 - Then type `exit` to exit the iTerm SSH Login.
+- 5.2 - Then go back to your Virtual Machine (not iTerm) and continue on with the steps below. 
