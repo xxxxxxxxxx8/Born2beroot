@@ -354,3 +354,10 @@ Defaults	log_input, log_output
 Defaults	requiretty
 ```
 
+### Part 6.5 - Crontab Configuation
+
+1. Then type `apt-get install -y net-tools` to install the netstat tools
+2. Then type `cd /usr/local/bin/`
+3. Then type `touch monitoring.sh`
+4. Lastly type `chmod 777 monitoring.sh`
+
