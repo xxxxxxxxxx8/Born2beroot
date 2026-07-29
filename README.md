@@ -402,3 +402,14 @@ wall "	#Architecture: $arc
 5. Save and Exit your `monitoring.sh`
 - 5.1 - Then type `exit` to exit the iTerm SSH Login.
 - 5.2 - Then go back to your Virtual Machine (not iTerm) and continue on with the steps below. 
+6. Then type `sudo visudo` to open your sudoers file 
+7. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitor.sh` under where its written %sudo ALL=(ALL:ALL) ALL
+8. It should look like this
+![1*l-7LtAqCon1gRkV3dY3qiQ](https://user-images.githubusercontent.com/58959408/174727595-11dbb2f9-9c34-4d11-870b-f832ea4a9224.png)
+9. Then exit and save your sudoers file
+10. Now type `sudo reboot` in your Virtual Machine to reboot sudo
+11. Type `sudo /usr/local/bin/monitoring.sh` to execute your script as su (super user)
+12. Type `sudo crontab -u root -e` to open the crontab and add the rule
+13. Lastly at the end of the crontab, type the following `*/9 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
+
+
