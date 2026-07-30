@@ -413,3 +413,13 @@ wall "	#Architecture: $arc
 13. Lastly at the end of the crontab, type the following `*/9 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
 
 
+## Part 7 - Signature.txt (Last Part Before Defence)
+
+⚠️ Warning: before you generate a signature number, turn off your Virtual Machine. ⚠️
+
+1. Open iTerm and type `cd`
+1. Then type `cd sgoinfre/students/<your_intra_username>/VirtualBox VMs`
+2. Type `shasum VirtualBox.vdi` or whatever your Virtual Machine is called (This can take from a few seconds to 5 mins).
+3. Copy the output number and create a signature.txt file and paste that number in the file. 
+3. Now you submit the signature.txt file with the output number in it. 
+
