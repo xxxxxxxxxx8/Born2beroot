@@ -435,3 +435,8 @@ wall "	#Architecture: $arc
 ### Why did I choose Debian?
 Easier to install and configure so better for personal servers.
 
+### Difference between Debian and Rocky?
+Debian is a lot easier to update then Rocky when a new version is released. Debian is more user-friendly and supports many libraries, filesystems and architecture. It also has more options for customisation. If you are a larger business Rocky offers more Enterprise features and excellent support for the Enterprise software. 
+
+![1*EUhkzOMoiT_KEF3j402O6g](https://user-images.githubusercontent.com/58959408/175495740-d4599f59-25b1-43ba-9c01-ba4246096f8a.png)
+
