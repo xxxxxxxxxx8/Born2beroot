@@ -440,3 +440,6 @@ Debian is a lot easier to update then Rocky when a new version is released. Debi
 
 ![1*EUhkzOMoiT_KEF3j402O6g](https://user-images.githubusercontent.com/58959408/175495740-d4599f59-25b1-43ba-9c01-ba4246096f8a.png)
 
+### What is a Virtual Machine?
+Is a resource that uses software instead of a physical computer to run programs or apps. Each VM has its own operating system and functions separately, so you can have more than one VM per machine. Can be used to test applications in a safe, separate environment. Works by using software to simulate virtual hardware and run on a host machine.
+
