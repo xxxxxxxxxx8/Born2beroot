@@ -430,3 +430,5 @@ wall "	#Architecture: $arc
 
 [Link](https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit) to the [Born2BeRoot Evaluation Checklist](https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit) created by [Adrian Musso-Gonzalez](https://github.com/AdrianMussoGonzalez).
 
+### The Evaluation Questions
+
