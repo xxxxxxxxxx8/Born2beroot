@@ -451,3 +451,8 @@ Is a resource that uses software instead of a physical computer to run programs 
 ### What is AppArmor?
 Linux security system that provides Mandatory Access Control (MAC) security. Allows the system admin to restrict the actions that processes can perform. It is included by default with Debian. Run aa-status to check if it is running.
 
+### Password Rules
+For the password rules, we use the password quality checking library and there are two files the common-password file which sets the rules like upper and lower case characters, duplicate characters etc and the login.defs file which stores the password expiration rules (30 days etc).
+Sudo nano /etc/login.defs
+Sudo nano /etc/pam.d/common-password
+
