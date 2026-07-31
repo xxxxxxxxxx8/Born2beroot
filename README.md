@@ -443,3 +443,8 @@ Debian is a lot easier to update then Rocky when a new version is released. Debi
 ### What is a Virtual Machine?
 Is a resource that uses software instead of a physical computer to run programs or apps. Each VM has its own operating system and functions separately, so you can have more than one VM per machine. Can be used to test applications in a safe, separate environment. Works by using software to simulate virtual hardware and run on a host machine.
 
+### What is the difference between aptitude and APT (Advanced Packaging Tool)?
+* Aptitude is a high-level package manager while APT is lower level which can be used by other higher level package managers
+* Aptitude is smarter and will automatically remove unused packages or suggest installation of dependent packages
+* Apt will only do explicitly what it is told to do in the command line
+
