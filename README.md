@@ -432,3 +432,6 @@ wall "	#Architecture: $arc
 
 ### The Evaluation Questions
 
+### Why did I choose Debian?
+Easier to install and configure so better for personal servers.
+
