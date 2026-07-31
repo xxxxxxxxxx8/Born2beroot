@@ -448,3 +448,6 @@ Is a resource that uses software instead of a physical computer to run programs 
 * Aptitude is smarter and will automatically remove unused packages or suggest installation of dependent packages
 * Apt will only do explicitly what it is told to do in the command line
 
+### What is AppArmor?
+Linux security system that provides Mandatory Access Control (MAC) security. Allows the system admin to restrict the actions that processes can perform. It is included by default with Debian. Run aa-status to check if it is running.
+
