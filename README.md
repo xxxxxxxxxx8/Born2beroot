@@ -456,3 +456,6 @@ For the password rules, we use the password quality checking library and there a
 Sudo nano /etc/login.defs
 Sudo nano /etc/pam.d/common-password
 
+### What is LVM
+Logical Volume Manager – allows us to easily manipulate the partitions or logical volume on a storage device. 
+
