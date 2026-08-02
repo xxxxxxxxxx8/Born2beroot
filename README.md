@@ -462,3 +462,6 @@ Logical Volume Manager – allows us to easily manipulate the partitions or logi
 ### UFW (Uncomplicated Firewall) 
 UFW is a interface to modify the firewall of the device without compromising security. You use it to configure which ports to allow connections to and which ports to close. This is useful in conjunction with SSH, can set a specific port for it to work with.
 
+### What is SSH?
+SSH or Secure Shell is an authentication mechanism between a client and a host. It uses encryption techniques so that all communication between clients and hosts is done in encrypted form. User on Mac or Linux can use SSH the terminal to work on their server via SSH.
+
