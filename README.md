@@ -459,3 +459,6 @@ Sudo nano /etc/pam.d/common-password
 ### What is LVM
 Logical Volume Manager – allows us to easily manipulate the partitions or logical volume on a storage device. 
 
+### UFW (Uncomplicated Firewall) 
+UFW is a interface to modify the firewall of the device without compromising security. You use it to configure which ports to allow connections to and which ports to close. This is useful in conjunction with SSH, can set a specific port for it to work with.
+
