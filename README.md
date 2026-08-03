@@ -472,3 +472,7 @@ Cron or cron job is a command line utility to schedule commands or scripts to ha
 - `sudo crontab -u root -e` – to edit the cron job
 - `change script to */1 * * * * sleep 30s && script path` – to run it every 30 seconds, delete the line to stop the job from running.
 
+### Evaluation Commands for UFW, Group, Host, lsblk and SSH
+
+- `sudo ufw status`
+- `sudo systemctl status ssh`
