@@ -465,3 +465,10 @@ UFW is a interface to modify the firewall of the device without compromising sec
 ### What is SSH?
 SSH or Secure Shell is an authentication mechanism between a client and a host. It uses encryption techniques so that all communication between clients and hosts is done in encrypted form. User on Mac or Linux can use SSH the terminal to work on their server via SSH.
 
+### What is Cron?
+Cron or cron job is a command line utility to schedule commands or scripts to happen at specific intervals or a specific time each day. Useful if you want to set your server to restart at a specific time each day. 
+
+- `cd /usr/local/bin` – to show monitoring.sh
+- `sudo crontab -u root -e` – to edit the cron job
+- `change script to */1 * * * * sleep 30s && script path` – to run it every 30 seconds, delete the line to stop the job from running.
+
