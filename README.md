@@ -476,3 +476,19 @@ Cron or cron job is a command line utility to schedule commands or scripts to ha
 
 - `sudo ufw status`
 - `sudo systemctl status ssh`
+- `getent group sudo`
+- `getent group user42`
+- `sudo adduser new username`
+- `sudo groupadd groupname`
+- `sudo usermod -aG groupname username`
+- `sudo chage -l username` - check password expire rules
+- `hostnamectl`
+- `hostnamectl set-hostname new_hostname` - to change the current hostname
+- Restart your Virtual Machine.
+- `sudo nano /etc/hosts` - change current hostname to new hostname
+- `lsblk` to display the partitions
+- `dpkg -l | grep sudo –` to show that sudo is installed
+- `sudo ufw status numbered`
+- `sudo ufw allow port-id`
+- `sudo ufw delete rule number`
+- `ssh your_user_id@127.0.0.1 -p 4242` -  do this in terminal to show that SSH to port 4242 is working
