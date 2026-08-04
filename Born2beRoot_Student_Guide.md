@@ -23,3 +23,23 @@
 - [Final Verification](#final-verification)
 - [References](#references)
 
+## Purpose and Learning Outcomes
+
+Born2beRoot is a system-administration project. Its purpose is to make the student design and operate a small Linux server rather than simply install an operating system. The final machine should have a controlled administrative model, encrypted storage, restricted network access, a strong password policy, an auditable `sudo` configuration, a monitoring script, and scheduled automation.
+
+This guide uses Debian because it is recommended for newcomers in the project subject and provides a large ecosystem of documentation and packages. The final implementation must always match the current subject and the requirements of the evaluator.
+
+The project connects the following concepts:
+
+| Concept | Practical implementation |
+|---|---|
+| Virtualization | Debian runs as a guest system inside VirtualBox. |
+| Identity | The machine has a hostname, a root account, and a normal user account. |
+| Privilege management | Administrative commands are executed through `sudo`. |
+| Storage security | The virtual disk uses encrypted storage and LVM. |
+| Network security | SSH is moved to port `4242` and protected by UFW. |
+| Authentication policy | PAM and `/etc/login.defs` enforce password quality and aging. |
+| Observability | `monitoring.sh` reports important server metrics. |
+| Automation | `cron` executes the monitoring script every ten minutes. |
+| Defence preparation | The student can explain the purpose of every configuration choice. |
+
