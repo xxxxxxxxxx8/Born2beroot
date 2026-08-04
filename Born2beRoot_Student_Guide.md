@@ -43,3 +43,11 @@ The project connects the following concepts:
 | Automation | `cron` executes the monitoring script every ten minutes. |
 | Defence preparation | The student can explain the purpose of every configuration choice. |
 
+## Important Safety Rules
+
+The commands in this guide modify authentication, storage, network access, and privilege configuration. Run them only inside the intended virtual machine. Confirm the target disk before partitioning, and create a VirtualBox snapshot before editing PAM, SSH, or `sudo` configuration.
+
+Never reuse the same password for every account. Use a unique password for the root account, the normal user, and the encryption passphrase. Do not publish credentials, private keys, database passwords, personal IP addresses, or terminal history in a public repository.
+
+The project subject is the final authority. This document is a learning aid and may contain examples that must be adapted to the Debian release, VirtualBox version, keyboard layout, and exact rules used for your evaluation.
+
