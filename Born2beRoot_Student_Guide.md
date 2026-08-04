@@ -51,3 +51,17 @@ Never reuse the same password for every account. Use a unique password for the r
 
 The project subject is the final authority. This document is a learning aid and may contain examples that must be adapted to the Debian release, VirtualBox version, keyboard layout, and exact rules used for your evaluation.
 
+## Prerequisites and Placeholders
+
+Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) and download the Debian installer from the [official Debian download page](https://www.debian.org/download). On 42 school computers, store large virtual-machine files in the location recommended by your campus, such as `sgoinfre`, when that storage is available.
+
+The guide uses these placeholders:
+
+| Placeholder | Meaning |
+|---|---|
+| `<login>` | Your 42 Intra username. |
+| `<hostname>` | The hostname required by the subject, often `<login>42`. |
+| `<password>` | A secret chosen by you; never copy a password from this guide. |
+| `<vm-directory>` | The directory containing the VirtualBox machine files. |
+| `<disk-file>` | The final `.vdi` file used to generate the signature. |
+
