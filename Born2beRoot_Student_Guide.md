@@ -115,3 +115,23 @@ Avoid storing a large virtual disk in a temporary or automatically cleaned direc
 
 ![Select the machine folder](https://user-images.githubusercontent.com/58959408/174700651-8dc8e9a0-7709-4202-8a12-12a384ff6e3e.png)
 
+## 3. Allocate memory and create the disk
+
+Allocate memory that leaves enough resources for the host operating system. The original guide uses `1024 MB`; this may be sufficient for a minimal server, but the host and subject requirements take priority.
+
+Create a virtual hard disk using the following choices:
+
+| Setting | Recommended choice |
+|---|---|
+| Disk type | `VDI (VirtualBox Disk Image)` |
+| Allocation | Dynamically allocated |
+| Capacity | Use the size required by the subject; the original guide uses `12 GB`. |
+
+Dynamic allocation allows the virtual-disk file to grow as data is written instead of reserving the full capacity immediately.
+
+![Choose VDI](https://user-images.githubusercontent.com/58959408/174701340-d84f6c80-e09b-43ae-b31a-6dd5d6306f23.png)
+
+![Choose dynamically allocated storage](https://user-images.githubusercontent.com/58959408/174744677-eac5b679-49f7-4881-a59b-00a420cbe640.png)
+
+![Set the virtual-disk size](https://user-images.githubusercontent.com/58959408/174745855-7388098be69-45cc-bb6d-7c6c1a40c1ac.png)
+
