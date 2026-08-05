@@ -65,3 +65,15 @@ The guide uses these placeholders:
 | `<vm-directory>` | The directory containing the VirtualBox machine files. |
 | `<disk-file>` | The final `.vdi` file used to generate the signature. |
 
+# Part 1 - Download and Prepare the Virtual Machine
+
+## 1. Download the Debian ISO
+
+Use the official Debian download page or the current Debian network-install directory. Select the installer image allowed by the subject. A network installer is small and downloads packages during installation, so an active network connection is required.
+
+```text
+https://www.debian.org/download
+```
+
+Verify that the file has an `amd64` architecture when the host and project requirements use a 64-bit Intel or AMD environment. Do not rename a file in a way that hides its actual format.
+
