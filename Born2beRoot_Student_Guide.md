@@ -77,3 +77,17 @@ https://www.debian.org/download
 
 Verify that the file has an `amd64` architecture when the host and project requirements use a 64-bit Intel or AMD environment. Do not rename a file in a way that hides its actual format.
 
+## 2. Optional 42 campus storage
+
+This section applies only when the school environment provides a shared `sgoinfre` area. The exact path can differ between campuses.
+
+```bash
+cd /sgoinfre/students
+mkdir <login>
+chmod 700 <login>
+```
+
+Copy the Debian ISO into the directory created for your account. The permission `700` allows the owner to access the directory while preventing other users from browsing it.
+
+Do not assume that shared storage is a backup. Keep an additional copy of important project files in an approved private location.
+
