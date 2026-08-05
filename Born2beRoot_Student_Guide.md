@@ -91,3 +91,7 @@ Copy the Debian ISO into the directory created for your account. The permission 
 
 Do not assume that shared storage is a backup. Keep an additional copy of important project files in an approved private location.
 
+## 3. Install VirtualBox
+
+On a personal computer, install VirtualBox from the official website. On a 42 Apple computer, use the Managed Software Center if that is the approved installation method.
+
