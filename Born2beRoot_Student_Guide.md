@@ -103,3 +103,15 @@ Open VirtualBox and select **New**. Use a descriptive name such as `Born2beRoot-
 
 ![Create a new virtual machine](https://user-images.githubusercontent.com/58959408/174700376-2862e8e9-0a7a-4681-af3b-e82dbc7d9aa5.png)
 
+## 2. Choose the storage location
+
+On 42 school computers, store the machine in your permitted student directory, for example:
+
+```text
+<vm-directory>/<login>/Born2beRoot-Debian
+```
+
+Avoid storing a large virtual disk in a temporary or automatically cleaned directory.
+
+![Select the machine folder](https://user-images.githubusercontent.com/58959408/174700651-8dc8e9a0-7709-4202-8a12-12a384ff6e3e.png)
+
