@@ -95,3 +95,11 @@ Do not assume that shared storage is a backup. Keep an additional copy of import
 
 On a personal computer, install VirtualBox from the official website. On a 42 Apple computer, use the Managed Software Center if that is the approved installation method.
 
+# Part 2 - Create the VirtualBox Machine
+
+## 1. Create the machine
+
+Open VirtualBox and select **New**. Use a descriptive name such as `Born2beRoot-Debian`. Select Linux and Debian as the operating-system family and version when the interface offers those options.
+
+![Create a new virtual machine](https://user-images.githubusercontent.com/58959408/174700376-2862e8e9-0a7a-4681-af3b-e82dbc7d9aa5.png)
+
