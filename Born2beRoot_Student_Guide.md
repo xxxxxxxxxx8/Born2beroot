@@ -213,3 +213,33 @@ findmnt
 
 The output should show the encrypted and LVM layers required by the subject.
 
+# Part 4 - Configure the Server
+
+## 1. Install and configure `sudo`
+
+Switch to a root shell only for the initial installation:
+
+```bash
+su -
+apt update
+apt-get install sudo
+```
+
+Add the normal user to the Debian administrative group:
+
+```bash
+usermod -aG sudo <login>
+getent group sudo
+```
+
+Restart the login session, or reboot, before testing the new group membership. Confirm that the normal user can use `sudo`:
+
+```bash
+sudo -v
+sudo whoami
+```
+
+The second command should print `root`. This does not mean the user has become root permanently; it means the individual command was executed with elevated privileges.
+
+Use `visudo` only when the subject requires a direct edit to the main sudoers file. It validates the syntax before saving and is safer than editing `/etc/sudoers` with a normal editor.
+
