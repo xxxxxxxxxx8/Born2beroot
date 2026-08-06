@@ -153,3 +153,16 @@ Select the language and country appropriate for your environment. Choose the key
 
 ![Debian installation menu](https://user-images.githubusercontent.com/58959408/174728861-fb9435a5-04e5-402c-80a3-f366c9b51be8.png)
 
+## 2. Set the hostname and accounts
+
+Set the hostname required by the subject. A common pattern is `<login>42`.
+
+```text
+Hostname: <hostname>
+Domain name: leave empty unless required
+```
+
+Create a root password and a separate normal-user account. Use the normal account for daily work and reserve root privileges for controlled administrative operations.
+
+> **Credential rule:** Write down the account roles, not the passwords in this README. A secure project should use separate, unique credentials rather than reusing one password everywhere.
+
