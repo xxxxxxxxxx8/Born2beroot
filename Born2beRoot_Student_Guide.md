@@ -243,3 +243,14 @@ The second command should print `root`. This does not mean the user has become r
 
 Use `visudo` only when the subject requires a direct edit to the main sudoers file. It validates the syntax before saving and is safer than editing `/etc/sudoers` with a normal editor.
 
+## 2. Optional development tools
+
+Git and Vim are useful tools, but they are not security requirements of Born2beRoot. Install only what your workflow needs:
+
+```bash
+sudo apt install git vim
+
+git --version
+vim --version
+```
+
