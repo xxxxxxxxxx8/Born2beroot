@@ -197,3 +197,19 @@ Install GRUB on the virtual disk, normally `/dev/sda` in a simple VirtualBox con
 
 ![Install GRUB](https://user-images.githubusercontent.com/58959408/174731448-b7b22a70-de87-4535-b8aa-3fb3294c9661.png)
 
+## 5. First boot
+
+After installation finishes, reboot and remove the ISO from the virtual optical drive if VirtualBox does not do so automatically. At boot:
+
+1. Select **Debian GNU/Linux**.
+2. Enter the encryption passphrase.
+3. Log in with the normal user.
+4. Inspect the storage layout:
+
+```bash
+lsblk
+findmnt
+```
+
+The output should show the encrypted and LVM layers required by the subject.
+
