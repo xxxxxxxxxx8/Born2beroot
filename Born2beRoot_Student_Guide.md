@@ -145,3 +145,11 @@ Open the virtual machine settings and select **Storage**. Select the empty optic
 
 Start the virtual machine. The Debian installer is controlled mainly with the keyboard, so use the arrow keys, `Tab`, `Space`, and `Enter` to navigate.
 
+# Part 3 - Install Debian
+
+## 1. Language, country, and keyboard
+
+Select the language and country appropriate for your environment. Choose the keyboard layout that matches the physical keyboard. A wrong layout can make symbols in passwords and commands difficult to type correctly.
+
+![Debian installation menu](https://user-images.githubusercontent.com/58959408/174728861-fb9435a5-04e5-402c-80a3-f366c9b51be8.png)
+
