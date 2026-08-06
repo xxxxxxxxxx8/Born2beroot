@@ -271,3 +271,22 @@ sudo nano /etc/hosts
 
 Reboot or start a new session after changing the hostname, then verify it with `hostnamectl`.
 
+# Part 5 - Connect Through SSH
+
+SSH provides an encrypted channel for remote administration. In Born2beRoot, the configuration demonstrates service installation, port management, access restriction, and the prohibition of direct root login.
+
+## 1. Install and configure the SSH server
+
+```bash
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl enable --now ssh
+sudo systemctl status ssh
+```
+
+Edit the daemon configuration:
+
+```bash
+sudo vim /etc/ssh/sshd_config
+```
+
