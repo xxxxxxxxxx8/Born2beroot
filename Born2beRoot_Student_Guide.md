@@ -177,3 +177,13 @@ The storage design has two layers:
 
 Select the correct virtual disk, confirm the partition layout, and create a strong encryption passphrase. When the installer asks how much of the volume group should be used, choose the value required by the subject; the original guide uses the maximum available space.
 
+![Choose encrypted LVM](https://user-images.githubusercontent.com/58959408/174730389-03e5dcd7-9472-4cab-bf88-fe3cc4dc0f4c.png)
+
+![Select the disk](https://user-images.githubusercontent.com/58959408/174730452-e267df43-2883-4760-85c4-010970fee329.png)
+
+![Separate mount points](https://user-images.githubusercontent.com/58959408/174730481-2641b9c0-c50d-4f2b-9e71-3896a0760e10.png)
+
+When asked to erase data, the virtual disk is empty, so continue only after verifying that the selected disk belongs to the VM. Set and confirm the encryption passphrase.
+
+![Set the encryption passphrase](https://user-images.githubusercontent.com/58959408/174730733-f306e051-4b0e-40de-93ab-56f2cdce45d5.png)
+
