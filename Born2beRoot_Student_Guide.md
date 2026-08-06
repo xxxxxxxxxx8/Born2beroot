@@ -135,3 +135,13 @@ Dynamic allocation allows the virtual-disk file to grow as data is written inste
 
 ![Set the virtual-disk size](https://user-images.githubusercontent.com/58959408/174745855-7388098be69-45cc-bb6d-7c6c1a40c1ac.png)
 
+## 4. Attach the Debian ISO
+
+Open the virtual machine settings and select **Storage**. Select the empty optical drive, choose **Choose a disk file**, and attach the Debian ISO.
+
+![Open VirtualBox storage settings](https://user-images.githubusercontent.com/58959408/175455682-e1b4c977-2f33-41cf-b3cc-3ad78b3254ce.png)
+
+![Choose the ISO file](https://user-images.githubusercontent.com/58959408/174702002-9b4fe4d2-3008-4375-9ec1-57f5e1425eb8.png)
+
+Start the virtual machine. The Debian installer is controlled mainly with the keyboard, so use the arrow keys, `Tab`, `Space`, and `Enter` to navigate.
+
