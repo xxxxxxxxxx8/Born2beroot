@@ -254,3 +254,20 @@ git --version
 vim --version
 ```
 
+## 3. Configure the hostname
+
+Check the current hostname and update it only if necessary:
+
+```bash
+hostnamectl
+sudo hostnamectl set-hostname <hostname>
+```
+
+If the hostname changes, inspect `/etc/hosts` and update the local hostname entry consistently:
+
+```bash
+sudo nano /etc/hosts
+```
+
+Reboot or start a new session after changing the hostname, then verify it with `hostnamectl`.
+
