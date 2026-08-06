@@ -166,3 +166,14 @@ Create a root password and a separate normal-user account. Use the normal accoun
 
 > **Credential rule:** Write down the account roles, not the passwords in this README. A secure project should use separate, unique credentials rather than reusing one password everywhere.
 
+## 3. Configure encrypted LVM
+
+Choose the partitioning option required by the subject. A common guided choice is **Guided - use entire disk and set up encrypted LVM**, followed by the option that separates directories such as `/home`, `/var`, and `/tmp`.
+
+The storage design has two layers:
+
+1. **Encryption** protects data at rest inside the virtual disk.
+2. **LVM** creates a storage pool from which logical volumes can be allocated and mounted separately.
+
+Select the correct virtual disk, confirm the partition layout, and create a strong encryption passphrase. When the installer asks how much of the volume group should be used, choose the value required by the subject; the original guide uses the maximum available space.
+
