@@ -187,3 +187,13 @@ When asked to erase data, the virtual disk is empty, so continue only after veri
 
 ![Set the encryption passphrase](https://user-images.githubusercontent.com/58959408/174730733-f306e051-4b0e-40de-93ab-56f2cdce45d5.png)
 
+## 4. Select packages and install GRUB
+
+Install only the software requested by the subject. For a minimal server, do not install a desktop environment. If the project requires SSH to be installed manually later, it is acceptable to deselect the SSH server during installation and configure it after the first boot.
+
+Install GRUB on the virtual disk, normally `/dev/sda` in a simple VirtualBox configuration. The device name may differ, so verify it before confirming.
+
+![Select Debian software](https://user-images.githubusercontent.com/58959408/174731387-b4859ded-9a9f-409a-a9c9-57d1ec77cbfd.png)
+
+![Install GRUB](https://user-images.githubusercontent.com/58959408/174731448-b7b22a70-de87-4535-b8aa-3fb3294c9661.png)
+
