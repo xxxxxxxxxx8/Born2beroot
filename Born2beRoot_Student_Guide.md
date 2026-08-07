@@ -290,3 +290,20 @@ Edit the daemon configuration:
 sudo vim /etc/ssh/sshd_config
 ```
 
+Set the port required by the subject and disable direct root login:
+
+```text
+Port 4243
+PermitRootLogin no
+```
+
+Remove the leading `#` when the line is commented. Validate the configuration before restarting the daemon:
+
+```bash
+sudo sshd -t
+sudo systemctl restart ssh
+sudo ss -tulpn | grep 4242
+```
+
+Keep the VM console or an existing SSH session open until a new connection has been tested successfully.
+
