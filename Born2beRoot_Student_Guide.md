@@ -307,3 +307,22 @@ sudo ss -tulpn | grep 4242
 
 Keep the VM console or an existing SSH session open until a new connection has been tested successfully.
 
+## 2. Configure VirtualBox port forwarding
+
+Power off the VM before changing its network settings. Open **Settings → Network → Adapter 1 → Advanced → Port Forwarding** and create a rule similar to this:
+
+| Field | Value |
+|---|---|
+| Name | `SSH-4242` |
+| Protocol | `TCP` |
+| Host IP | `127.0.0.1` |
+| Host port | `4242` |
+| Guest IP | Leave empty unless required by your network configuration. |
+| Guest port | `4242` |
+
+Binding the host side to `127.0.0.1` keeps the forwarding local to the host computer. Do not expose the VM to the public network unless the subject explicitly requires it.
+
+![VirtualBox port-forwarding settings](https://user-images.githubusercontent.com/58959408/174720900-39eda7e0-9be8-453c-94f1-4aa1a6b10951.png)
+
+![Forward host port 4242 to guest port 4242](https://user-images.githubusercontent.com/58959408/174720987-e8de3bf9-2ffa-40ca-9d5c-4d0dea9d0b30.png)
+
