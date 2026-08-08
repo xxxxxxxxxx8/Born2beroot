@@ -398,3 +398,28 @@ password requisite pam_pwquality.so retry=3 minlen=10 ucredit=-1 lcredit=-1 dcre
 
 PAM is authentication-critical. Create a snapshot and keep a recovery path open before editing it. Test a controlled password change after saving the file.
 
+## 2. Configure password aging
+
+Edit `/etc/login.defs`:
+
+```bash
+sudo vim /etc/login.defs
+```
+
+Set the values required by the subject:
+
+```text
+PASS_MAX_DAYS   300
+PASS_MIN_DAYS   2
+PASS_WARN_AGE   7
+```
+
+These defaults mainly affect newly created accounts. Apply the values to an existing user explicitly when required:
+
+```bash
+sudo chage -M 30 -m 2 -W 7 <login>
+sudo chage -l <login>
+```
+
+The `chage -l` command displays the active password-aging information and is useful during evaluation.
+
