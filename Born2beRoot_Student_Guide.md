@@ -423,3 +423,20 @@ sudo chage -l <login>
 
 The `chage -l` command displays the active password-aging information and is useful during evaluation.
 
+## 3. Create the required groups
+
+The exact group names must match the subject. A common Born2beRoot configuration uses `user42`; an additional `evaluating` group should be created only if it is required by your local guide or evaluation process.
+
+```bash
+sudo groupadd user42
+sudo groupadd evaluating
+getent group user42
+getent group evaluating
+```
+
+If a group already exists, do not create a duplicate. Check first:
+
+```bash
+getent group user42 || sudo groupadd user42
+```
+
