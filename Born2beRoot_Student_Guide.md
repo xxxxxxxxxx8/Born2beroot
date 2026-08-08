@@ -440,3 +440,40 @@ If a group already exists, do not create a duplicate. Check first:
 getent group user42 || sudo groupadd user42
 ```
 
+## 4. Create and assign users
+
+List local users if you need to inspect the current account layout:
+
+```bash
+cut -d: -f1 /etc/passwd
+```
+
+Create a normal user only when one does not already exist:
+
+```bash
+sudo adduser <login>
+```
+
+Add the user to the required groups:
+
+```bash
+sudo usermod -aG sudo <login>
+sudo usermod -aG user42 <login>
+```
+
+If an evaluation-only group is required:
+
+```bash
+sudo usermod -aG evaluating <login>
+```
+
+Start a new login session, then verify membership:
+
+```bash
+groups <login>
+getent group sudo
+getent group user42
+getent group evaluating
+sudo chage -l <login>
+```
+
