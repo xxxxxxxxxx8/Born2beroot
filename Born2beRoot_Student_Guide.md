@@ -346,3 +346,19 @@ Exit the session with:
 exit
 ```
 
+## 4. Configure UFW
+
+UFW is a simplified interface for firewall management. Install it and allow the SSH port before enabling the firewall:
+
+```bash
+sudo apt update
+sudo apt install ufw
+sudo ufw allow 4242/tcp
+sudo ufw enable
+sudo ufw status numbered
+```
+
+The order is important. Enabling UFW before allowing the management port can lock you out of the server. Allow only the ports required by the project.
+
+Do not use `sudo ufw allow ssh` as the only rule when SSH has been moved to port `4242`; explicitly allow `4242/tcp` and verify the result.
+
