@@ -326,3 +326,23 @@ Binding the host side to `127.0.0.1` keeps the forwarding local to the host comp
 
 ![Forward host port 4242 to guest port 4242](https://user-images.githubusercontent.com/58959408/174720987-e8de3bf9-2ffa-40ca-9d5c-4d0dea9d0b30.png)
 
+## 3. Test the SSH connection
+
+Start the VM and connect from the host terminal:
+
+```bash
+ssh <login>@127.0.0.1 -p 4242
+```
+
+When the VM is reinstalled, the SSH host key may change. Remove only the obsolete key for this endpoint rather than deleting the complete `known_hosts` file:
+
+```bash
+ssh-keygen -R '[127.0.0.1]:4242'
+```
+
+Exit the session with:
+
+```bash
+exit
+```
+
