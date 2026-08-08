@@ -362,3 +362,39 @@ The order is important. Enabling UFW before allowing the management port can loc
 
 Do not use `sudo ufw allow ssh` as the only rule when SSH has been moved to port `4242`; explicitly allow `4242/tcp` and verify the result.
 
+# Part 6 - Apply Security and Automation
+
+## 1. Enforce password quality with PAM
+
+Install the password-quality module:
+
+```bash
+sudo apt install libpam-pwquality
+```
+
+Open the PAM password configuration:
+
+```bash
+sudo vim /etc/pam.d/common-password
+```
+
+Find the `pam_pwquality.so` line and add the options required by the subject. A typical configuration is:
+
+```text
+password requisite pam_pwquality.so retry=3 minlen=10 ucredit=-1 lcredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+```
+
+| Option | Meaning |
+|---|---|
+| `retry=3` | Allows three attempts to choose a valid password. |
+| `minlen=10` | Requires at least ten characters. |
+| `ucredit=-1` | Requires at least one uppercase letter. |
+| `lcredit=-1` | Requires at least one lowercase letter. |
+| `dcredit=-1` | Requires at least one digit. |
+| `maxrepeat=3` | Limits repeated consecutive characters. |
+| `reject_username` | Rejects a password containing the username. |
+| `difok=7` | Requires a significant difference from the previous password. |
+| `enforce_for_root` | Applies the quality rules when changing the root password. |
+
+PAM is authentication-critical. Create a snapshot and keep a recovery path open before editing it. Test a controlled password change after saving the file.
+
