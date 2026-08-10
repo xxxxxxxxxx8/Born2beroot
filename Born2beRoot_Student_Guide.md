@@ -575,3 +575,35 @@ sudo chmod 775 /usr/local/bin/monitoring.sh
 sudo /usr/local/bin/monitoring.sh
 ```
 
+## 7. Schedule the script with cron
+
+Test the script manually before scheduling it:
+
+```bash
+sudo /usr/local/bin/monitoring.sh
+```
+
+Edit root's crontab:
+
+```bash
+sudo crontab -u root -e
+```
+
+Add:
+
+```cron
+*/15 * * * * /usr/local/bin/monitoring.sh
+```
+
+This means that the script runs every ten minutes. The five fields represent minute, hour, day of month, month, and day of week.
+
+Verify the entry and service:
+
+```bash
+sudo crontab -u root -l
+sudo systemctl status cron
+sudo journalctl -u cron --since "30 minutes ago"
+```
+
+Use an absolute path because cron provides a smaller environment than an interactive shell. Do not use a `30-second` cron expression; standard cron schedules operate at minute resolution. If a test requires a shorter interval, use a temporary loop outside the final project configuration and remove it afterward.
+
