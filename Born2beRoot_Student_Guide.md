@@ -477,3 +477,41 @@ getent group evaluating
 sudo chage -l <login>
 ```
 
+## 5. Configure sudo logging safely
+
+Create a dedicated directory for sudo logs:
+
+```bash
+sudo install -d -o root -g root -m 700 /var/log/sudo
+sudo touch /var/log/sudo/sudo.log
+sudo chown root:root /var/log/sudo/sudo.log
+sudo chmod 600 /var/log/sudo/sudo.log
+```
+
+Create a dedicated configuration file instead of editing the main `/etc/sudoers` file directly:
+
+```bash
+sudo visudo -f /etc/sudoers.d/sudo_config
+```
+
+Add only the directives required by the subject. A typical configuration is:
+
+```text
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Defaults        badpass_message="Password is incorrect. Please try again."
+Defaults        passwd_tries=3
+Defaults        logfile="/var/log/sudo.log"
+Defaults        log_input,log_output
+```
+
+Validate the configuration:
+
+```bash
+sudo visudo -c
+sudo tail -n 20 /var/log/sudo/sudo.log
+```
+
+Do not add `NOPASSWD` rules unless the subject explicitly requires them. Passwordless administrative access weakens the demonstration of controlled privilege escalation. Do not use `chmod 777` on scripts or log files; it allows every local user to modify them.
+
