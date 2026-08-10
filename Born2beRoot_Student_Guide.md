@@ -515,3 +515,63 @@ sudo tail -n 20 /var/log/sudo/sudo.log
 
 Do not add `NOPASSWD` rules unless the subject explicitly requires them. Passwordless administrative access weakens the demonstration of controlled privilege escalation. Do not use `chmod 777` on scripts or log files; it allows every local user to modify them.
 
+## 6. Prepare the monitoring script
+
+Install tools only when needed. Modern Debian systems provide `ss`, so `net-tools` and the obsolete `netstat` command are not required for the monitoring script. Install `net-tools` only if the subject or evaluation explicitly asks for it.
+
+Create a root-owned script with restrictive permissions:
+
+```bash
+sudo install -o root -g root -m 755 /dev/null /usr/local/bin/monitoring.sh
+sudo vim /usr/local/bin/monitoring.sh
+```
+
+Use an absolute path and a safe Bash structure:
+
+```bash
+#!/usr/bin/env bash
+
+set -e
+
+arc=$(uname -a)
+pcpu=$(grep -c '^physical id' /proc/cpuinfo 2>/dev/null || echo 0)
+vcpu=$(nproc)
+fram=$(free --mega | awk '/^Mem:/ {print $2}')
+uram=$(free --mega | awk '/^Mem:/ {print $3}')
+pram=$(free --mega | awk '/^Mem:/ {printf "%.2f", ($3/$2)*100}')
+fdisk=$(df -BG --total | awk '/^total/ {printf "%.0f", $2}')
+udisk=$(df -BG --total | awk '/^total/ {printf "%.0f", $3}')
+pdisk=$(df -P --total | awk '/^total/ {print $5}')
+cpul=$(vmstat 1 2 | tail -1 | awk '{printf "%.1f%%", 100-$15}')
+lb=$(who -b | awk '{print $3 " " $4}')
+lvmu=$(lsblk 2>/dev/null | grep -q lvm && echo yes || echo no)
+ctcp=$(ss -tan state established 2>/dev/null | tail -n +2 | wc -l)
+ulog=$(users | wc -w)
+ip=$(hostname -I | awk '{print $1}')
+mac=$(ip link | awk '/link\/ether/ {print $2; exit}')
+cmds=$(journalctl _COMM=sudo --no-pager 2>/dev/null | grep -c COMMAND || true)
+
+wall "#Architecture: $arc
+#CPU physical: $pcpu
+#vCPU: $vcpu
+#Memory Usage: ${uram}/${fram}MB (${pram}%)
+#Disk Usage: ${udisk}/${fdisk}GB (${pdisk})
+#CPU load: $cpul
+#Last boot: $lb
+#LVM use: $lvmu
+#Connections TCP: $ctcp ESTABLISHED
+#User log: $ulog
+#Network: IP $ip ($mac)
+#Sudo: $cmds cmd"
+```
+
+The exact output format and metric definitions must follow the subject. The purpose of the script is to demonstrate understanding, so be ready to explain every variable, pipeline, and command during evaluation.
+
+Make sure the file remains root-owned and is not writable by normal users:
+
+```bash
+sudo chown root:root /usr/local/bin/monitoring.sh
+sudo chmod 775 /usr/local/bin/monitoring.sh
+sudo /usr/local/bin/monitoring.sh
+```
+
