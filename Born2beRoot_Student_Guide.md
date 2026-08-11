@@ -656,3 +656,18 @@ Debian and Rocky Linux are different Linux distributions with different communit
 
 A virtual machine is an isolated software-defined computer that runs a guest operating system on a host computer. The virtualization platform presents virtual CPU, memory, disk, and network devices to the guest. This allows a server environment to be created and tested without dedicating a separate physical computer.[4]
 
+## What is the difference between APT and Aptitude?
+
+APT is the package-management framework and command-line toolset used to retrieve, install, update, and remove Debian packages. Aptitude is a higher-level package-management interface that provides its own user interface and dependency-resolution behavior. Both use Debian package repositories, but they are different front ends with different workflows. During evaluation, explain the command you actually use instead of claiming that one tool is universally better.
+
+Useful commands include:
+
+```bash
+apt search <package>
+apt show <package>
+apt install <package>
+apt remove <package>
+apt update
+apt upgrade
+```
+
