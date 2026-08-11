@@ -607,3 +607,36 @@ sudo journalctl -u cron --since "30 minutes ago"
 
 Use an absolute path because cron provides a smaller environment than an interactive shell. Do not use a `30-second` cron expression; standard cron schedules operate at minute resolution. If a test requires a shorter interval, use a temporary loop outside the final project configuration and remove it afterward.
 
+# Part 7 - Generate `signature.txt`
+
+The signature is generated from the final virtual-disk file. It must represent the finished machine, so do not generate it before the last configuration change.
+
+> **Important:** Shut down the virtual machine completely before hashing the disk file. Do not generate the signature while the VM is running or suspended.
+
+Locate the VirtualBox machine directory. On a 42 school computer, it may be under a path similar to:
+
+```bash
+cd /sgoinfre/students/<login>/VirtualBox\ VMs
+```
+
+Find the disk file:
+
+```bash
+find . -type f -name '*.vdi' -print
+```
+
+Use the hashing command required by the subject. A typical macOS command is:
+
+```bash
+shasum <disk-file>.vdi
+```
+
+Create `signature.txt` in the project submission directory and place the resulting signature in it:
+
+```bash
+shasum <disk-file>.vdi > signature.txt
+cat signature.txt
+```
+
+If the subject specifies a particular algorithm, file name, or output format, follow that requirement exactly. After generating the signature, do not modify, boot, or resize the virtual disk unless you generate a new signature.
+
