@@ -640,3 +640,19 @@ cat signature.txt
 
 If the subject specifies a particular algorithm, file name, or output format, follow that requirement exactly. After generating the signature, do not modify, boot, or resize the virtual disk unless you generate a new signature.
 
+# Part 8 - Defence Evaluation Questions
+
+The purpose of the defence is to demonstrate understanding. The following answers are concise starting points; expand them using the commands and configuration present on your own machine.
+
+## Why choose Debian?
+
+Debian is a stable, widely documented Linux distribution with a large package ecosystem. It is recommended for newcomers in the Born2beRoot subject and provides familiar tools such as `apt`, systemd services, PAM, UFW, LVM, and OpenSSH. The choice is also practical because it is easy to install in a minimal server configuration and has extensive official documentation.[1] [2]
+
+## What is the difference between Debian and Rocky Linux?
+
+Debian and Rocky Linux are different Linux distributions with different communities, release processes, package ecosystems, and administrative conventions. Debian commonly uses the APT package-management ecosystem, while Rocky Linux is designed to be compatible with Red Hat Enterprise Linux and commonly uses DNF. The correct choice for Born2beRoot is the distribution permitted by the subject; the important point is that the student understands the selected system rather than making an unsupported comparison.[1] [3]
+
+## What is a virtual machine?
+
+A virtual machine is an isolated software-defined computer that runs a guest operating system on a host computer. The virtualization platform presents virtual CPU, memory, disk, and network devices to the guest. This allows a server environment to be created and tested without dedicating a separate physical computer.[4]
+
