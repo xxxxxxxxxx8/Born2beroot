@@ -736,3 +736,9 @@ Cron is a time-based scheduler for recurring tasks. A crontab entry contains fiv
 
 The command must use an absolute path and the script must be executable. Check the crontab and logs when diagnosing a failed scheduled task.[10]
 
+## What commands can be demonstrated during evaluation?
+
+The exact evaluation commands depend on the subject. The following groups are useful for explaining the final state of the machine:
+
+| Topic | Commands |
+|---|---|
