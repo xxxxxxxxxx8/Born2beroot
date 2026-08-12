@@ -716,3 +716,13 @@ sudo ufw allow 4242/tcp
 sudo ufw delete <rule-number>
 ```
 
+## What is SSH?
+
+SSH, or Secure Shell, is a protocol and set of tools for encrypted remote administration. The SSH client connects to an SSH server, authenticates the user, and protects the session from network eavesdropping. In Born2beRoot, the daemon listens on port `4242` and direct root login is disabled, so administration occurs through the normal user and `sudo`.[9]
+
+```bash
+ssh <login>@127.0.0.1 -p 4242
+sudo systemctl status ssh
+sudo ss -tulpn | grep 4242
+```
+
