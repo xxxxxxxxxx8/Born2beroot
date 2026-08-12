@@ -682,3 +682,13 @@ systemctl status apparmor
 
 The exact requirement for AppArmor or SELinux depends on the subject and distribution chosen.[5]
 
+## What are the password rules?
+
+The password policy has two parts. PAM, commonly configured through `/etc/pam.d/common-password` and `pam_pwquality`, evaluates the quality of a new password. `/etc/login.defs` provides account-aging defaults such as maximum lifetime, minimum lifetime, and warning period. `chage` displays or applies aging values for an existing account.[6]
+
+```bash
+sudo chage -l <login>
+sudo vim /etc/login.defs
+sudo vim /etc/pam.d/common-password
+```
+
