@@ -742,3 +742,16 @@ The exact evaluation commands depend on the subject. The following groups are us
 
 | Topic | Commands |
 |---|---|
+| Hostname | `hostnamectl` |
+| Storage | `lsblk`, `findmnt`, `pvs`, `vgs`, `lvs` |
+| SSH | `systemctl status ssh`, `ss -tulpn`, `ssh <login>@127.0.0.1 -p 4242` |
+| Firewall | `sudo ufw status numbered`, `sudo ufw status verbose` |
+| Users | `id <login>`, `groups <login>`, `getent group sudo`, `getent group user42` |
+| Password aging | `sudo chage -l <login>` |
+| Sudo | `sudo -V`, `sudo visudo -c`, `sudo tail /var/log/sudo/sudo.log` |
+| Monitoring | `sudo /usr/local/bin/monitoring.sh` |
+| Cron | `sudo crontab -u root -l`, `systemctl status cron` |
+| Services | `systemctl --failed`, `systemctl status <service>` |
+
+Avoid commands that modify the system during a defence unless the evaluator specifically requests a change. Explain the effect before executing it.
+
