@@ -706,3 +706,13 @@ sudo lvs
 findmnt
 ```
 
+## What is UFW?
+
+UFW means Uncomplicated Firewall. It is a user-friendly interface for creating and inspecting firewall rules. In this project, UFW should allow the required SSH port, normally `4242`, while blocking unnecessary inbound services. UFW does not replace the need to understand network interfaces, VirtualBox forwarding, service listeners, and the difference between host and guest ports.[8]
+
+```bash
+sudo ufw status numbered
+sudo ufw allow 4242/tcp
+sudo ufw delete <rule-number>
+```
+
