@@ -671,3 +671,14 @@ apt update
 apt upgrade
 ```
 
+## What is AppArmor?
+
+AppArmor is a Linux Mandatory Access Control framework. It restricts what selected programs can access by applying profiles to processes. The profile-based approach complements traditional Unix permissions because it can restrict a process even when the process has access through its user or group identity. On Debian, check whether the service and profiles are active with:
+
+```bash
+sudo aa-status
+systemctl status apparmor
+```
+
+The exact requirement for AppArmor or SELinux depends on the subject and distribution chosen.[5]
+
