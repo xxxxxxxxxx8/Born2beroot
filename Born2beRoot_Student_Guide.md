@@ -755,3 +755,24 @@ The exact evaluation commands depend on the subject. The following groups are us
 
 Avoid commands that modify the system during a defence unless the evaluator specifically requests a change. Explain the effect before executing it.
 
+# Final Verification
+
+Before submission, check the following items:
+
+| Check | Expected result |
+|---|---|
+| Boot | The VM starts and the encrypted volume unlocks with the correct passphrase. |
+| Hostname | The hostname matches the project requirement. |
+| Users | The normal user exists and belongs to the required groups. |
+| Root SSH access | Direct root login is disabled. |
+| SSH | The server listens on port `4242` and accepts the normal user. |
+| UFW | The firewall is enabled and only required ports are allowed. |
+| Password policy | PAM rules and account-aging values match the subject. |
+| Sudo | The normal user can elevate commands and sudo activity is logged. |
+| Monitoring | The script runs correctly and reports the required metrics. |
+| Cron | Root's crontab runs the script every ten minutes. |
+| Signature | `signature.txt` was generated after the final VM shutdown. |
+| Secrets | No passwords, keys, tokens, or private data are committed. |
+
+The best defence preparation is to explain the relationship between configuration and risk. For example, changing the SSH port alone is not a complete security strategy; it becomes meaningful when combined with disabled root login, a normal administrative account, a firewall rule, and verified access through the intended port.
+
