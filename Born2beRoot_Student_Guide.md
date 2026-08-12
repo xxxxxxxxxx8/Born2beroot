@@ -692,3 +692,17 @@ sudo vim /etc/login.defs
 sudo vim /etc/pam.d/common-password
 ```
 
+## What is LVM?
+
+LVM stands for Logical Volume Manager. It introduces a layer between physical or encrypted storage and mounted filesystems. A physical volume is placed into a volume group, and logical volumes are allocated from that group. This makes storage easier to organize and resize than a fixed collection of traditional partitions. In Born2beRoot, LVM is commonly placed inside an encrypted container.[7]
+
+Useful inspection commands include:
+
+```bash
+lsblk
+sudo pvs
+sudo vgs
+sudo lvs
+findmnt
+```
+
