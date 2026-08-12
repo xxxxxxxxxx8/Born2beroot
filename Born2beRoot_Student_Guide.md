@@ -726,3 +726,13 @@ sudo systemctl status ssh
 sudo ss -tulpn | grep 4242
 ```
 
+## What is cron?
+
+Cron is a time-based scheduler for recurring tasks. A crontab entry contains five time fields followed by a command. In this project, root's crontab executes the monitoring script every ten minutes:
+
+```cron
+*/15 * * * * /usr/local/bin/monitoring.sh
+```
+
+The command must use an absolute path and the script must be executable. Check the crontab and logs when diagnosing a failed scheduled task.[10]
+
