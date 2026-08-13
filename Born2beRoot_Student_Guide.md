@@ -293,7 +293,7 @@ sudo vim /etc/ssh/sshd_config
 Set the port required by the subject and disable direct root login:
 
 ```text
-Port 4243
+Port 4242
 PermitRootLogin no
 ```
 
@@ -409,7 +409,7 @@ sudo vim /etc/login.defs
 Set the values required by the subject:
 
 ```text
-PASS_MAX_DAYS   300
+PASS_MAX_DAYS   30
 PASS_MIN_DAYS   2
 PASS_WARN_AGE   7
 ```
@@ -502,7 +502,7 @@ Defaults        mail_badpass
 Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 Defaults        badpass_message="Password is incorrect. Please try again."
 Defaults        passwd_tries=3
-Defaults        logfile="/var/log/sudo.log"
+Defaults        logfile="/var/log/sudo/sudo.log"
 Defaults        log_input,log_output
 ```
 
@@ -531,7 +531,7 @@ Use an absolute path and a safe Bash structure:
 ```bash
 #!/usr/bin/env bash
 
-set -e
+set -u
 
 arc=$(uname -a)
 pcpu=$(grep -c '^physical id' /proc/cpuinfo 2>/dev/null || echo 0)
@@ -592,7 +592,7 @@ sudo crontab -u root -e
 Add:
 
 ```cron
-*/15 * * * * /usr/local/bin/monitoring.sh
+*/10 * * * * /usr/local/bin/monitoring.sh
 ```
 
 This means that the script runs every ten minutes. The five fields represent minute, hour, day of month, month, and day of week.
@@ -731,7 +731,7 @@ sudo ss -tulpn | grep 4242
 Cron is a time-based scheduler for recurring tasks. A crontab entry contains five time fields followed by a command. In this project, root's crontab executes the monitoring script every ten minutes:
 
 ```cron
-*/15 * * * * /usr/local/bin/monitoring.sh
+*/10 * * * * /usr/local/bin/monitoring.sh
 ```
 
 The command must use an absolute path and the script must be executable. Check the crontab and logs when diagnosing a failed scheduled task.[10]
