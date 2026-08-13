@@ -776,3 +776,16 @@ Before submission, check the following items:
 
 The best defence preparation is to explain the relationship between configuration and risk. For example, changing the SSH port alone is not a complete security strategy; it becomes meaningful when combined with disabled root login, a normal administrative account, a firewall rule, and verified access through the intended port.
 
+# References
+
+[1]: https://www.debian.org/doc/ "Debian Documentation"
+[2]: https://www.debian.org/download "Debian Downloads"
+[3]: https://docs.rockylinux.org/ "Rocky Linux Documentation"
+[4]: https://www.virtualbox.org/manual/ "Oracle VM VirtualBox User Manual"
+[5]: https://apparmor.net/ "AppArmor Official Website"
+[6]: https://manpages.debian.org/bookworm/libpam-pwquality/pam_pwquality.8.en.html "Debian pam_pwquality Manual"
+[7]: https://manpages.debian.org/bookworm/lvm2/lvm.8.en.html "Debian LVM Manual"
+[8]: https://manpages.debian.org/bookworm/ufw/ufw.8.en.html "Debian UFW Manual"
+[9]: https://www.openssh.com/manual.html "OpenSSH Manual Pages"
+[10]: https://manpages.debian.org/bookworm/cron/cron.8.en.html "Debian cron Manual"
+
