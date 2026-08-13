@@ -261,7 +261,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 2. Type `sudo systemctl status ssh` to check SSH Server Status
 3. Type `sudo vim /etc/ssh/sshd_config`
 4. Find this line `#Port22` 
-5. Change the line to `Port 4243` without the # (Hash) in front of it
+5. Change the line to `Port 4242` without the # (Hash) in front of it
 6. Save and Exit Vim 
 7. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
 8. Lastly type `sudo service ssh restart` to restart the SSH Service 
@@ -302,9 +302,9 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 3. Find this line. `lcredit=-1 password		requisite		pam_deny.so` or
 <img width="828" alt="Screen Shot 2022-07-29 at 6 40 34 PM" src="https://user-images.githubusercontent.com/58959408/181726262-8f8b7027-1929-4dda-8ac5-3957d3a1bd3a.png">
-4. Add this to the end of that line `minlen=8 ucredit=-1 lcredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root`
+4. Add this to the end of that line `minlen=10 ucredit=-1 lcredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root`
 
-- 4.1 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 minlen=8 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root`
+- 4.1 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root`
 <img width="800" alt="179329787-1b718843-9272-43e4-8d92-8d83933cc938" src="https://user-images.githubusercontent.com/58959408/181725921-c1e6c2b1-9dd3-46c5-b738-111467bdb394.png">
 
 5. Save and Exit Vim
@@ -367,7 +367,7 @@ Defaults	requiretty
 ```
 #!/bin/bash
 arc=$(uname -a)
-pcpu=$(grep "physical id" /proc/cpuinfo | sort | uni | wc -l) 
+pcpu=$(grep "physical id" /proc/cpuinfo | sort | uniq | wc -l) 
 vcpu=$(grep "^processor" /proc/cpuinfo | wc -l)
 fram=$(free -m | awk '$1 == "Mem:" {print $2}')
 uram=$(free -m | awk '$1 == "Mem:" {print $3}')
@@ -376,7 +376,7 @@ fdisk=$(df -BG | grep '^/dev/' | grep -v '/boot$' | awk '{ft += $2} END {print f
 udisk=$(df -BM | grep '^/dev/' | grep -v '/boot$' | awk '{ut += $3} END {print ut}')
 pdisk=$(df -BM | grep '^/dev/' | grep -v '/boot$' | awk '{ut += $3} {ft+= $2} END {printf("%d"), ut/ft*100}')
 cpul=$(top -bn1 | grep '^%Cpu' | cut -c 9- | xargs | awk '{printf("%.1f%%"), $1 + $3}')
-lb=$(who -r | awk '$1 == "system" {print $3 " " $4}')
+lb=$(who -b | awk '$1 == "system" {print $3 " " $4}')
 lvmu=$(if [ $(lsblk | grep "lvm" | wc -l) -eq 0 ]; then echo no; else echo yes; fi)
 ctcp=$(ss -neopt state established | wc -l)
 ulog=$(users | wc -w)
@@ -410,7 +410,7 @@ wall "	#Architecture: $arc
 10. Now type `sudo reboot` in your Virtual Machine to reboot sudo
 11. Type `sudo /usr/local/bin/monitoring.sh` to execute your script as su (super user)
 12. Type `sudo crontab -u root -e` to open the crontab and add the rule
-13. Lastly at the end of the crontab, type the following `*/9 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
+13. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
 
 
 ## Part 7 - Signature.txt (Last Part Before Defence)
