@@ -789,3 +789,14 @@ The best defence preparation is to explain the relationship between configuratio
 [9]: https://www.openssh.com/manual.html "OpenSSH Manual Pages"
 [10]: https://manpages.debian.org/bookworm/cron/cron.8.en.html "Debian cron Manual"
 
+## Author
+
+Prepared for the 1337/42 Born2beRoot project. Replace this line with your name, login, cohort, and repository link before publishing.
+
+> Build carefully, secure deliberately, monitor continuously, and understand every layer.
+
+<!-- Keep this guide synchronized with the actual machine configuration. -->
+<!-- Never commit real credentials or private keys. -->
+<!-- The project subject takes precedence over this guide. -->
+<!-- End of document. -->
+
