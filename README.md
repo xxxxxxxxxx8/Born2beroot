@@ -245,7 +245,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 1. First type `su -` to login in as the root user.
 2. Then type `apt-get update -y` 
 3. Then type `apt-get upgrade -y` 
-4. Then type `apt-get install sudo`
+4. Then type `apt install sudo`
 5. Then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
 6. Type `sudo visudo` to open sudoers file
 7. Lastly find - # User privilege specification, type `your_username  	ALL=(ALL) ALL`
@@ -403,7 +403,7 @@ wall "	#Architecture: $arc
 - 5.1 - Then type `exit` to exit the iTerm SSH Login.
 - 5.2 - Then go back to your Virtual Machine (not iTerm) and continue on with the steps below. 
 6. Then type `sudo visudo` to open your sudoers file 
-7. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitor.sh` under where its written %sudo ALL=(ALL:ALL) ALL
+7. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh` under where its written %sudo ALL=(ALL:ALL) ALL
 8. It should look like this
 ![1*l-7LtAqCon1gRkV3dY3qiQ](https://user-images.githubusercontent.com/58959408/174727595-11dbb2f9-9c34-4d11-870b-f832ea4a9224.png)
 9. Then exit and save your sudoers file
