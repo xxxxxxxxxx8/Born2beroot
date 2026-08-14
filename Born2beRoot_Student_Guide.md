@@ -222,7 +222,7 @@ Switch to a root shell only for the initial installation:
 ```bash
 su -
 apt update
-apt-get install sudo
+apt install sudo
 ```
 
 Add the normal user to the Debian administrative group:
@@ -571,7 +571,7 @@ Make sure the file remains root-owned and is not writable by normal users:
 
 ```bash
 sudo chown root:root /usr/local/bin/monitoring.sh
-sudo chmod 775 /usr/local/bin/monitoring.sh
+sudo chmod 755 /usr/local/bin/monitoring.sh
 sudo /usr/local/bin/monitoring.sh
 ```
 
