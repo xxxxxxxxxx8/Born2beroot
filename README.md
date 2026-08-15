@@ -8,7 +8,7 @@ This guide has 8 Parts:
 - Part 6 - Continue Configurating Your Virtual Machine
 - Part 7 - Signature.txt
 - Part 8 - Your Born2BeRoot Defence Evaluation with Answers
-
+ 
 ## Part 1 - Downloading Your Virtual Machine
 
 1. Click on this link <ins>**https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/**
